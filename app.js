@@ -36,9 +36,9 @@ async function main() {
   await mongoose.connect(DB_URL);
 }
 
-app.engine('ejs',ejsMate);
-app.set('view engine', 'ejs');
-app.engine('ejs', require('ejs-mate').__express);  // If using ejs-mate
+
+app.engine('ejs', ejsMate.__express);  
+app.set('view engine', 'ejs'); 
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
