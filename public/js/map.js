@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     attribution: "© OpenStreetMap contributors"
   }).addTo(map);
 
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 300);
+
   L.marker([lat, lng])
     .addTo(map)
     .bindPopup(`<h4>${address}</h4><p>Exact location provided after booking</p>`)

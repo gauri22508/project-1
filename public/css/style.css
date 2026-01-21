@@ -5,7 +5,6 @@ body{
     min-height: 100vh;
 }
 
-
 .container {
     flex: 1;
 }
@@ -62,10 +61,6 @@ body{
 .listing-card {
     border: none !important;
 margin-bottom: 2rem;
-
-
-
-
 }
 
 .card-img-top {
@@ -132,6 +127,7 @@ border: none !important;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .category{
     font-size: 1rem;
     color: #555;
@@ -161,3 +157,152 @@ border: none !important;
     font-size: 0.9rem;
   }
   
+/* Responsive styles for mobile devices 
+for show page and new page*/
+@media (max-width: 767px) {
+  .responsive-main {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .responsive-card {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .responsive-textarea {
+    width: 100% !important;
+  }
+  .responsive-review-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .responsive-btns .edit-btn {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .responsive-btns form button {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  .responsive-map {
+    width: 100%;
+    height: 300px;
+  }
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
+  .responsive-stars {
+    font-size: 14px;
+  }
+  .responsive-stars-result {
+    font-size: 16px;
+  }
+  .responsive-btn {
+    min-height: 44px; 
+    font-size: 16px;
+  }
+  .responsive-feedback {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-title {
+    font-size: 1.5rem;
+  }
+
+  .responsive-text {
+    font-size: 14px;
+  }
+
+  .responsive-card-title {
+    font-size: 1.2rem;
+  }
+}
+
+  /* Responsive styles for mobile devices 
+for index page*/
+@media (max-width: 767px) {
+ 
+  .responsive-text .filter {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .responsive-text .tax-toggel {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .responsive-card .card-img-overlay {
+    padding: 10px; 
+  }
+  .listing-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .listing-link:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-text .filter p {
+    font-size: 12px;
+  }
+
+  .responsive-card .card-text {
+    font-size: 12px;
+  }
+}
+
+/* Additional responsive styles for all pages (edit.ejs, login.ejs, signup.ejs, error.ejs, navbar) */
+@media (max-width: 767px) {
+  /* General classes for all pages */
+  .responsive-title {
+    font-size: 1.5rem;
+  }
+
+  .responsive-text {
+    font-size: 14px;
+  }
+
+  /* For navbar */
+  .responsive-text .nav-link {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .form-control.me-2 {
+    margin-bottom: 10px;
+  }
+
+  /* For edit.ejs original image */
+  .responsive-img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-text .nav-link {
+    font-size: 12px;
+  }
+
+  .responsive-img {
+    max-height: 150px;
+  }
+}
