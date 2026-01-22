@@ -172,7 +172,7 @@ for show page and new page*/
   }
 
   .responsive-textarea {
-    width: 100% !important;
+    width: 90% !important;
   }
   .responsive-review-card {
     width: 100%;
@@ -180,7 +180,7 @@ for show page and new page*/
     margin-right: 0;
   }
 
-  .responsive-btns .edit-btn {
+  .responsive-btns .edit-btn  {
     margin-left: 0;
     display: block;
     width: 100%;
@@ -193,7 +193,7 @@ for show page and new page*/
     width: 100%;
   }
   .responsive-map {
-    width: 40%;
+    width: 20%;
     height: 300px;
   }
   .responsive-img {
@@ -203,8 +203,8 @@ for show page and new page*/
   .responsive-stars {
     font-size: 14px;
   }
-  .responsive-stars-result {
-    font-size: 16px;
+  .responsive-stars-result {  
+    font-size: 12px !important;  
   }
   .responsive-btn {
     min-height: 44px; 
@@ -225,6 +225,11 @@ for show page and new page*/
 
   .responsive-card-title {
     font-size: 1.2rem;
+  }
+
+  .responsive-stars-result {  
+    font-size: 10px !important; 
+    transform: scale(0.7) !important;  
   }
 }
 
