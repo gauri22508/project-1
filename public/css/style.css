@@ -121,7 +121,7 @@ border: none !important;
 #map {
   
     height: 400px;     
-    width: 50vh;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid #ccc;
     margin-top: 15px;
@@ -193,7 +193,7 @@ for show page and new page*/
     width: 100%;
   }
   .responsive-map {
-    width: 1%;
+    width: 100%;
     height: 200px;
   }
   .responsive-img {
