@@ -162,12 +162,12 @@ for show page and new page*/
 @media (max-width: 767px) {
   .responsive-main {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right:  10px;
   }
   .responsive-card {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left:  10px;
+    margin-right:  10px;
     width: 100%;
   }
 
@@ -176,12 +176,12 @@ for show page and new page*/
   }
   .responsive-review-card {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left:  10px;
+    margin-right:  10px;
   }
 
   .responsive-btns .edit-btn  {
-    margin-left: 0;
+    margin-left: 10px;
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -193,8 +193,8 @@ for show page and new page*/
     width: 100%;
   }
   .responsive-map {
-    width: 20%;
-    height: 300px;
+    width: 10%;
+    height: 200px;
   }
   .responsive-img {
     width: 100%;
