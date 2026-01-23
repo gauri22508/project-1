@@ -165,10 +165,10 @@ for show page and new page*/
 @media (max-width: 767px) {
   .responsive-main {
     width: 100%;
-   padding: 0 10px;
+   padding: 10px 10px;
   }
   .responsive-card {
-   padding: 0 10px;
+   padding: 10px 10px;
     width: 100%;
   }
 
@@ -177,7 +177,7 @@ for show page and new page*/
   }
   .responsive-review-card {
     width: 100%;
-   padding: 0 10px;
+   padding: 10px 10px;
   }
 
   .responsive-btns .edit-btn  {
@@ -225,26 +225,9 @@ for show page and new page*/
     padding-right: 10px !important;
   }
 
-  /* Text aur search button better kiye */
+  
   .responsive-text {
-    font-size: 16px; /* Readable text */
-  }
-  .search-btn {
-    width: auto !important; /* Auto width taaki inline lage */
-    margin-top: 0;
-    margin-left: 10px; /* Space between input aur button */
-    display: inline-block !important; /* Same line mein */
-    vertical-align: middle; /* Align karne ke liye */
-  }
-  .search-input {
-    width: auto !important; /* Auto width taaki button ke saath fit ho */
-    display: inline-block !important; /* Same line mein */
-    vertical-align: middle; /* Align karne ke liye */
-  }
-
-  /* Navbar mein search ko inline karne ke liye */
-  .d-flex {
-    flex-direction: row !important; /* Row banaya taaki search elements inline rahen */
+    font-size: 16px;
   }
 }
 @media (max-width: 480px) {
