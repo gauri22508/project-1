@@ -136,14 +136,14 @@ border: none !important;
 }
 /* search bar */
   .search-btn{
-    background-color: #fe424d;
-    color: white;
-    border-radius: 25px;
-    padding: 0 1rem 0 1rem;
+    background-color: #fe424d !important;
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 0 1rem 0 1rem !important;
   }
   .search-btn:hover{
-    background-color: #fe424d;
-    color: #fff;
+    background-color: #fe424d !important;
+    color: #fff !important;
   }
   .search-btn i{
     display: inline;
@@ -151,10 +151,10 @@ border: none !important;
   }
 
   .search-input{
-    border-radius: 25px;
-    width: 250px;
-    padding: 0.5rem 3rem 0.5rem 3rem ;
-    font-size: 0.9rem;
+    border-radius: 25px!important;
+    width: 250px!important;
+    padding: 0.5rem 3rem 0.5rem 3rem !important;
+    font-size: 0.9rem!important;
   }
   
 /* Responsive styles for mobile devices 
@@ -163,7 +163,7 @@ for show page and new page*/
   .responsive-main {
     width: 100%;
     margin-left: 10px;
-    margin-right:  10px;
+    margin-right: 10px;
   }
   .responsive-card {
     margin-left:  10px;
@@ -172,10 +172,10 @@ for show page and new page*/
   }
 
   .responsive-textarea {
-    width: 90% !important;
+    width: 80% !important;
   }
   .responsive-review-card {
-    width: 100%;
+    width: 90%;
     margin-left:  10px;
     margin-right:  10px;
   }
@@ -193,7 +193,7 @@ for show page and new page*/
     width: 100%;
   }
   .responsive-map {
-    width: 10%;
+    width: 7%;
     height: 200px;
   }
   .responsive-img {
