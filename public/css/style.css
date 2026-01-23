@@ -175,10 +175,10 @@ for show page and new page*/
 @media (max-width: 767px) {
   .responsive-main {
     width: 100%;
-   padding: 0 10px;
+   padding: 10px 10px;
   }
   .responsive-card {
-   padding: 0 10px;
+   padding: 10px 10px;
     width: 100%;
   }
 
@@ -188,9 +188,7 @@ for show page and new page*/
   .responsive-review-card {
    
     width: calc(100% - 20px);
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+   margin: 0 10px;
   }
 
   .responsive-btns .edit-btn  {
