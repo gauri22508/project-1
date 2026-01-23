@@ -60,17 +60,23 @@ body{
 
 .listing-card {
     border: none !important;
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
 }
 
 .card-img-top {
     border-radius: 1rem !important;
-   width: 100%!important;
-   object-fit: cover !important;
+    width: calc(100% - 30px) !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    object-fit: cover !important;
 }
 
 .card-body{
-    padding: 1rem 0 !important;
+   
+    padding: 1rem 15px !important;
 }
 .card-text p {
     font-size: 1.2rem;
@@ -103,7 +109,12 @@ border: none !important;
 
 /*show page */
 .show-img {
+    
     height: 30vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+    object-fit: cover;
 }
 
 .btns{
@@ -112,8 +123,9 @@ border: none !important;
 }
 
 .show-card {
-    padding-left: 0%    !important;
-    padding-right: 0% !important;
+  
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }  
 
 /* map */
@@ -174,8 +186,11 @@ for show page and new page*/
     width: 80% !important;
   }
   .responsive-review-card {
-    width: 100%;
-   padding: 0 10px;
+   
+    width: calc(100% - 20px);
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .responsive-btns .edit-btn  {
@@ -210,6 +225,16 @@ for show page and new page*/
   }
   .responsive-feedback {
     font-size: 12px;
+  }
+  /* Added for show page responsiveness */
+  .show-img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+  .show-card {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 @media (max-width: 480px) {
@@ -256,6 +281,20 @@ for index page*/
 
   .listing-link:hover {
     text-decoration: none;
+  }
+  /* Added for index page responsiveness */
+  .listing-card {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+  }
+  .card-img-top {
+    width: calc(100% - 20px) !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .card-body {
+    padding: 1rem 10px !important;
   }
 }
 

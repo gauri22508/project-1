@@ -65,7 +65,8 @@
         </div>
         <div class="mb-3 mt-3">
           <label for="comment" class="form-label">Comment:</label>
-          <textarea id="comment" name="review[comment]" class="form-control w-100 responsive-textarea" rows="4" required></textarea>
+          <textarea id="comment" name="review[comment]" 
+          class="form-control w-100 responsive-textarea" rows="4" required></textarea>
           <div class="invalid-feedback responsive-feedback">Please add some comments for review</div>
         </div>
         <button class="btn btn-outline-dark responsive-btn">Submit</button>
@@ -79,7 +80,8 @@
         <div class="card col-lg-5 col-md-6 col-12 mb-3 responsive-review-card">
           <div class="card-body">
             <h5 class="card-title responsive-card-title">@<%= review.author.username %></h5>
-            <p class="starability-result card-text responsive-stars-result" data-rating="<%= review.rating %>"></p>
+            <p class="starability-result card-text responsive-stars-result"
+             data-rating="<%= review.rating %>"></p>
             <p class="card-text review-comment responsive-text">
               <%= review.comment %>
             </p>
