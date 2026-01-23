@@ -1,4 +1,6 @@
-body{
+
+
+ body{
 font-family: "plus Jakarta Sans", sans-serif !important;
 display: flex;
 flex-direction: column;
@@ -9,8 +11,9 @@ min-height: 100vh;
 .container {
 flex: 1;
 }
+/* /navbar/ */
 
-/* navbar */
+
 .navbar {
 height: 5rem;
 background-color: white;
@@ -27,7 +30,7 @@ font-size: 2rem
 color: #111010 !important;
 }
 
-
+    
 /* /footer/ */
 .f-info-link a {
 text-decoration: none;
@@ -215,9 +218,7 @@ width: 100%;
 
 
 .responsive-textarea {
-width: calc(100% - 20px) !important; 
-margin-left: 10px;
-margin-right: 10px;
+width: 80% !important;
 }
 .responsive-review-card {
 
