@@ -143,6 +143,7 @@ border: none !important;
     color: white !important;
     border-radius: 25px !important;
     padding: 0 1rem 0 1rem !important;
+
   }
   .search-btn:hover{
     background-color: #fe424d !important;
@@ -165,11 +166,14 @@ for show page and new page*/
 @media (max-width: 767px) {
   .responsive-main {
     width: 100%;
+    height: auto;
    padding: 10px 10px;
+   margin: 10px 10px;
   }
   .responsive-card {
    padding: 10px 10px;
     width: 100%;
+     margin: 10px 10px;
   }
 
   .responsive-textarea {
@@ -216,8 +220,8 @@ for show page and new page*/
 
   /* Show page margins add kiye */
   .show-img {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
     width: calc(100% - 20px);
   }
   .show-card {
@@ -256,6 +260,7 @@ for index page*/
   .responsive-text .filter {
     margin: 5px 0;
     font-size: 14px;
+    height: auto;
   }
 
   .responsive-text .tax-toggel {
