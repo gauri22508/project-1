@@ -167,8 +167,6 @@ border: none !important;
 ================================ */
 
 @media (max-width: 767px) {
-
-  /* No side scroll */
   body {
     overflow-x: hidden;
   }
@@ -183,7 +181,7 @@ border: none !important;
     padding: 0.5rem 0.8rem;
   }
 
-  /* search bar inline (IMPORTANT FIX) */
+  /* search bar inline */
   .navbar .d-flex {
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -226,29 +224,43 @@ border: none !important;
   }
 
   /* ---------- SHOW PAGE ---------- */
+@media (max-width: 767px) {
+
+  .show-card {
+    padding: 12px !important;
+    margin: 0 10px 16px 10px;
+  }
+
   .show-img {
     width: 100%;
     height: auto;
-    margin: 0 0 12px 0 !important;
+    margin-bottom: 12px !important;
+    border-radius: 12px;
   }
 
-  .show-card {
-    padding: 0 !important;
+  .show-card .card-body {
+    padding: 8px !important;
   }
 
-  .btns,
   .responsive-btns {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 10px;
+    margin-top: 12px;
   }
 
-  .responsive-btns .edit-btn,
-  .responsive-btns form button {
+  .responsive-btns a,
+  .responsive-btns form {
+    flex: 1;
+  }
+
+  .responsive-btns .responsive-btn {
     width: 100%;
-    margin-left: 0 !important;
+    margin: 0 !important;
   }
-
+   .responsive-title {
+    font-size: 1.6rem;
+  }}
   /* ---------- REVIEWS / FORMS ---------- */
   .responsive-textarea {
     width: 100% !important;
