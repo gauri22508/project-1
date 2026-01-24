@@ -160,175 +160,144 @@ border: none !important;
     padding: 0.5rem 3rem 0.5rem 3rem !important;
     font-size: 0.9rem!important;
   }
-  
-/* Responsive styles for mobile devices 
-for show page and new page*/
+
+
+/* ===============================
+   MOBILE FIX FOR SMALL SCREENS
+================================ */
+
 @media (max-width: 767px) {
+
+  /* No side scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 12px !important;
+  }
+
+  /* ---------- NAVBAR ---------- */
+  .navbar {
+    height: auto;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* search bar inline (IMPORTANT FIX) */
+  .navbar .d-flex {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100% !important;
+    font-size: 14px !important;
+    padding: 0.45rem 0.8rem !important;
+    border-radius: 20px !important;
+  }
+
+  .search-btn {
+    padding: 0.45rem 0.9rem !important;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* ---------- INDEX PAGE ---------- */
   .responsive-main {
     width: 100%;
-    height: auto;
-   padding: 10px 10px;
-   margin: 10px 10px;
+    padding: 10px;
+    margin: 0;
   }
+
   .responsive-card {
-   padding: 10px 10px;
     width: 100%;
-     margin: 10px 10px;
+    margin: 0 0 1rem 0;
+    padding: 10px;
   }
 
-  .responsive-textarea {
-    width: 80% !important;
-  }
-  .responsive-review-card {
-    width: 100%;
-   padding: 10px 10px;
+  .card-img-top {
+    height: 220px;
   }
 
-  .responsive-btns .edit-btn  {
-    margin-left: 10px;
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+  .card-text p {
+    font-size: 1rem;
   }
 
-  .responsive-btns form button {
-    margin-left: 0;
-    display: block;
-    width: 100%;
-  }
-  .responsive-map {
-    width: 100%;
-    height: 200px;
-  }
-  .responsive-img {
+  /* ---------- SHOW PAGE ---------- */
+  .show-img {
     width: 100%;
     height: auto;
+    margin: 0 0 12px 0 !important;
   }
-  .responsive-stars {
-    font-size: 14px;
+
+  .show-card {
+    padding: 0 !important;
   }
-  .responsive-stars-result {  
-    font-size: 12px !important;  
+
+  .btns,
+  .responsive-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-  .responsive-btn {
-    min-height: 44px; 
-    font-size: 16px;
+
+  .responsive-btns .edit-btn,
+  .responsive-btns form button {
+    width: 100%;
+    margin-left: 0 !important;
   }
+
+  /* ---------- REVIEWS / FORMS ---------- */
+  .responsive-textarea {
+    width: 100% !important;
+  }
+
   .responsive-feedback {
     font-size: 12px;
   }
 
-  /* Show page margins add kiye */
-  .show-img {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-    width: calc(100% - 20px);
-  }
-  .show-card {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+  /* ---------- MAP ---------- */
+  #map,
+  .responsive-map {
+    width: 100%;
+    height: 220px;
   }
 
-  
-  .responsive-text {
-    font-size: 16px;
-  }
-}
-@media (max-width: 480px) {
-  .responsive-title {
-    font-size: 1.5rem;
-  }
-
+  /* ---------- TEXT ---------- */
   .responsive-text {
     font-size: 14px;
   }
 
-  .responsive-card-title {
-    font-size: 1.2rem;
-  }
-
-  .responsive-stars-result {  
-    font-size: 10px !important; 
-    transform: scale(0.7) !important;  
-  }
-}
-
-  /* Responsive styles for mobile devices 
-for index page*/
-@media (max-width: 767px) {
- 
-  .responsive-text .filter {
-    margin: 5px 0;
+  .responsive-stars {
     font-size: 14px;
+  }
+
+  .responsive-stars-result {
+    font-size: 12px !important;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .f-info {
     height: auto;
-  }
-
-  .responsive-text .tax-toggel {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  .responsive-card .card-img-overlay {
-    padding: 10px; 
-  }
-  .listing-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .listing-link:hover {
-    text-decoration: none;
+    padding: 12px;
   }
 }
 
+/* ---------- SMALL PHONES ---------- */
 @media (max-width: 480px) {
-  .responsive-text .filter p {
-    font-size: 12px;
-  }
 
-  .responsive-card .card-text {
-    font-size: 12px;
-  }
-}
-
-/* Additional responsive styles for all pages (edit.ejs, login.ejs, signup.ejs, error.ejs, navbar) */
-@media (max-width: 767px) {
-  /* General classes for all pages */
   .responsive-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
-  .responsive-text {
-    font-size: 14px;
+  .card-img-top {
+    height: 200px;
   }
 
-  /* For navbar */
-  .responsive-text .nav-link {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-
-  .d-flex {
-    flex-direction: column;
-  }
-
-  .form-control.me-2 {
-    margin-bottom: 10px;
-  }
-
-  /* For edit.ejs original image */
-  .responsive-img {
-    max-height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .responsive-text .nav-link {
-    font-size: 12px;
-  }
-
-  .responsive-img {
-    max-height: 150px;
+  .responsive-stars-result {
+    font-size: 10px !important;
+    transform: scale(0.8);
   }
 }
