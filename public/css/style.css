@@ -263,7 +263,7 @@ border: none !important;
   }
    .responsive-title {
     font-size: 1.6rem;
-  }}
+  }
   /* ---------- REVIEWS / FORMS ---------- */
   .responsive-textarea {
     width: 100% !important;
@@ -298,6 +298,40 @@ border: none !important;
     height: auto;
     padding: 12px;
   }
+
+  .navbar-collapse .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+  }
+
+  .filter {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #f8f8f8;
+  }
+
+  .filter i {
+    font-size: 1.2rem;
+  }
+
+  .filter p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .tax-toggel {
+    width: 100%;
+    max-width: 220px;
+    margin-top: 10px;
+  }
+}
 
 /* ---------- SMALL PHONES ---------- */
 @media (max-width: 480px) {
