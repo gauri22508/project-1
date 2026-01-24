@@ -172,8 +172,10 @@ border: none !important;
   }
 
   .container {
-    padding: 12px !important;
-  }
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
 
   /* ---------- NAVBAR ---------- */
   .navbar {
@@ -224,12 +226,12 @@ border: none !important;
   }
 
   /* ---------- SHOW PAGE ---------- */
-@media (max-width: 767px) {
 
   .show-card {
-    padding: 12px !important;
-    margin: 0 10px 16px 10px;
-  }
+  padding: 12px !important;
+  margin: 0 auto 16px auto;
+}
+
 
   .show-img {
     width: 100%;
@@ -295,7 +297,6 @@ border: none !important;
     height: auto;
     padding: 12px;
   }
-}
 
 /* ---------- SMALL PHONES ---------- */
 @media (max-width: 480px) {
